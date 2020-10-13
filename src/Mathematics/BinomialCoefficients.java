@@ -30,7 +30,7 @@ public class BinomialCoefficients {
     }
 
     private static long modInverse(long a, long m) {
-        return gcd(a, m) != 1 ? -1 : pow(a, m - 2, m);
+        return gcd(a, m) != 1 ? 1 : pow(a, m - 2, m);
     }
 
     private static long pow(long x, long y, long m) {
